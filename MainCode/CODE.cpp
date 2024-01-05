@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 #include <conio.h>
 #include <Windows.h>
 
@@ -123,7 +124,7 @@ void quest_5();
 					}
 					else if(my_player.health >= 100)
 					{
-						my_player.health = 130;
+						my_player.health = 120;
 						cout << "\nYou get health bonus";
 						display_health();
 					}
@@ -138,7 +139,7 @@ void quest_5();
 					}
 					else
 					{
-						my_player.health = 120;
+						my_player.health = 130;
 						cout << "\nYou get health bonus";
 						display_health();
 					}
@@ -196,10 +197,10 @@ void quest_5();
 			cout << "\nYou need to select your class.";
 			cout << "\n> : Mage                   (1)" ;
 			cout << "\n    Attack Damage = 5-10";
-			cout << "\n    Health = 130";
+			cout << "\n    Health = 120";
 			cout << "\n> : Rogue                  (2)";
 			cout << "\n    Attack Damage = 10-15";
-			cout << "\n    Health = 120";
+			cout << "\n    Health = 130";
 			cout << "\n> : Worrior                (3)";
 			cout << "\n    Health = 150";
 			cout << "\n    Attack Damage = 15-20";
@@ -209,16 +210,16 @@ void quest_5();
 			if(user_choice == '1')
 			{
 				my_player._class = "Mage";
-				my_player.health = 130;
-				my_player.max_health = 130;
+				my_player.health = 120;
+				my_player.max_health = 120;
 				my_player.hi_damg = 10;
 				my_player.low_damg = 5;
 			}
 			else if(user_choice == '2')
 			{
 				my_player._class = "Rouge";
-				my_player.health = 120;
-				my_player.max_health = 120;
+				my_player.health = 130;
+				my_player.max_health = 130;
 				my_player.hi_damg = 15;
 				my_player.low_damg = 10;
 			}
