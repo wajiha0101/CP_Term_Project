@@ -310,8 +310,11 @@ void quest_5();
 			
 	void player_data()
 	{
+		do{
+		system("cls");
 		cout << "\nEnter your name : ";
-		getline(cin,my_player.name);
+		getline(cin, my_player.name);
+		}while (my_player.name.length() == 0);
 		class_choice();
 	}
 	
