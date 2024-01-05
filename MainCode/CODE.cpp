@@ -131,7 +131,7 @@ void quest_5();
 				}
 				else if(my_player._class == "Rouge")
 				{
-					if(my_player.health > 50 && my_player.health <= 70)
+					if(my_player.health > 50 && my_player.health <100)
 					{
 						my_player.health += 50;
 						cout << "\nYou get health bonus";
